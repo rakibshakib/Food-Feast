@@ -2,24 +2,29 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import ProductCard from "../ProductCard/ProductCard";
 import { Container } from "@mui/material";
-
+import { useFoodData } from "../../Hooks/useFoodData";
 
 const HomePageProducts = () => {
+  const [data] = useFoodData();
+  console.log(data);
   return (
-    <Container sx={{my: 5, py: 4}}>
+    <Container sx={{ my: 5, py: 4 }}>
       <Grid container spacing={5}>
-        <ProductCard /> 
-        <ProductCard /> 
-        <ProductCard /> 
-        <ProductCard /> 
-        <ProductCard /> 
-        <ProductCard /> 
-        <ProductCard /> 
-        <ProductCard /> 
-        <ProductCard /> 
-        <ProductCard /> 
-        <ProductCard /> 
-        <ProductCard /> 
+        {data.map((item) => (
+          <ProductCard key={item._id} item={item} />
+        ))}
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
       </Grid>
     </Container>
   );

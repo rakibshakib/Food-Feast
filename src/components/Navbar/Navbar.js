@@ -1,15 +1,16 @@
 import React from "react";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="nav-bar">
       <div>
-        <h2 className="brand-name">Food Feast</h2>
+        <Link to='/' className='router-link brand-name'>Food Feast</Link>
       </div>
       <div className="nav-bar-options">
         <h4 className="explore-btn">Explore</h4>
-        <h4 className="explore-btn">About Us</h4>
+        <Link className='router-link' to='/about-us'>About Us</Link>
         <div className="nav-user">
           <figure>
             <img src="img.jpg" alt="user-imge" />
