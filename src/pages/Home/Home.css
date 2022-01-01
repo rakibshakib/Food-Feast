@@ -1,0 +1,25 @@
+.brand-name{
+    font-size: 18px;
+}
+.explore-btn,
+.user-name{
+    font-size: 16px;
+    margin: 0 5px;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    width: 90%;
+    margin: auto;
+}
+.nav-user, 
+.nav-bar-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-user{
+    margin-left: 30px;
+}
