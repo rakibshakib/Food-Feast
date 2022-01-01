@@ -4,3 +4,36 @@
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
+li{
+  list-style: none;
+}
+.footer{
+  background-color: black;
+  color: white;
+  padding: 25px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+  margin-top: 50px;
+}
+.footer h2{
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(175, 175, 175);
+  margin-bottom: 20px;
+}
+.footer .footer-brand{
+  font-size: 20px;
+  margin: 10px auto;
+  color: beige;
+  cursor: pointer;
+}
+.footer li{
+  cursor: pointer;
+  margin-top: 10px;
+  color: rgb(175, 175, 175);
+}
+.footer li:hover{
+  color: white;
+}

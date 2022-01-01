@@ -9,6 +9,7 @@ const Navbar = () => {
       </div>
       <div className="nav-bar-options">
         <h4 className="explore-btn">Explore</h4>
+        <h4 className="explore-btn">About Us</h4>
         <div className="nav-user">
           <figure>
             <img src="img.jpg" alt="user-imge" />
