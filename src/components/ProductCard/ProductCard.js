@@ -5,12 +5,12 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Grid, Rating, Tooltip } from "@mui/material";
 const ProductCard = () => {
-    
+
   const orderFood = () => {
     console.log("this food is orders");
   };
   return (
-    <Grid item xs={12} md={4} lg={3} onClick={orderFood}>
+    <Grid item xs={12} md={4} lg={3} onClick={orderFood} className="food-card">
       <Tooltip title="Order This Food" placement="top-end">
         <Card sx={{ maxWidth: 310 }}>
           <CardMedia

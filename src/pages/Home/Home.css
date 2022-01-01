@@ -44,6 +44,9 @@
       width: 90%;
       margin: 50px auto;
   }
+  .food-card{
+      cursor: pointer;
+  }
   @media (max-width: 425px) { 
       .banner{
           height: 120px;
