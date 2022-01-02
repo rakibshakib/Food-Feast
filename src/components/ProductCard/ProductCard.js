@@ -3,7 +3,8 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Grid, Rating, Tooltip } from "@mui/material";
+import { Box, Grid, Tooltip } from "@mui/material";
+import GradeIcon from '@mui/icons-material/Grade';
 
 const ProductCard = ({item}) => {
 
@@ -21,12 +22,14 @@ const ProductCard = ({item}) => {
             alt="green iguana"
           />
           <CardContent>
+          <Box sx={{display: 'flex' , justifyContent: 'space-between', alignItems: 'center'}}>
             <Typography gutterBottom component="h6">
               {item?.name}
             </Typography>
-            <Rating name="read-only" value={item?.rating} readOnly />
-            <Typography variant="body2" color="text.secondary">
-              {item?.description}
+            <Box sx={{display: 'flex' , justifyContent: 'start', alignItems: 'center'}}><GradeIcon /> {item?.rating}/5 </Box>
+            </Box>
+            <Typography variant="body2" color="text.secondary" sx={{my:2}}>
+              {item?.description.slice(0,50)}
             </Typography>
           </CardContent>
         </Card>
