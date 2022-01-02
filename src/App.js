@@ -5,6 +5,7 @@ import About from "./pages/About/About";
 import Login from "./pages/Login/Login/Login";
 import AuthProvider from "./contexts/AuthProvider/AuthProvider";
 import Dashboard from "./pages/Dashboard/Dashboard/Dashboard";
+import BookingPage from "./pages/BookingPage/BookingPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
 
           </Route>
           <Route path="/login" element={<Login />} />
+          <Route path="/booking-food/:id" element={<BookingPage />} />
         </Routes>
       </div>
     </AuthProvider>

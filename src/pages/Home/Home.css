@@ -25,6 +25,14 @@
 .nav-user{
     margin-left: 30px;
 }
+.nav-user  figure{
+    width: 42px;
+    margin-right: 10px;
+}
+.nav-user figure img{
+    width: 100%;
+    border-radius: 50px;
+}
 .banner {
     background-repeat: no-repeat;
     background-size: 100%;

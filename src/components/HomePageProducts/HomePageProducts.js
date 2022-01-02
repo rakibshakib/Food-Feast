@@ -6,7 +6,6 @@ import { useFoodData } from "../../Hooks/useFoodData";
 
 const HomePageProducts = () => {
   const [data] = useFoodData();
-  console.log(data);
   return (
     <Container sx={{ my: 5, py: 4 }}>
       <Grid container spacing={5}>
