@@ -40,3 +40,8 @@
         height: 200px;
     }
 }
+@media screen and (max-width:768px) {
+    .about-banner{
+        display: none;
+    }
+}
