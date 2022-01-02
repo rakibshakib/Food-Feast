@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import { NavLink } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
-import useAuth from './../../hooks/useAuth';
+// import useAuth from '../../Hooks/useAuth'
+import useAuth from '../../Hooks/useAuth'
 
 
 const Navbar = () => {
@@ -27,13 +28,10 @@ const Navbar = () => {
         {
           user?.email ?
               <Box>
-                  <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/dashboard">
-                      <Button color="inherit">Dashboard</Button>
-                  </NavLink>
                   <Button onClick={logout} color="inherit">Logout</Button>
               </Box>
               :
-              <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/login">
+              <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/login">
                   <Button color="inherit">Login</Button>
               </NavLink>
           }

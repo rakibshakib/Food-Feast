@@ -1,13 +1,12 @@
 import { Container, Typography, TextField, Button, CircularProgress, Alert } from '@mui/material';
 import React, { useState } from 'react';
 import { Grid } from '@mui/material';
-import login from '../../../images/login.png'
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
-import useAuth from './../../../hooks/useAuth';
+import useAuth from '../../../Hooks/useAuth';
 
 const Login = () => {
     const [loginData, setLoginData] = useState({});
-    const { user, loginUser, signInWithGoogle, isLoading, authError } = useAuth();
+    const { user, loginUser, signInWithGoogle, isLoading, authError } = useAuth(); 
 
     const location = useLocation();
     const navigate = useNavigate();
@@ -63,7 +62,7 @@ const Login = () => {
                     <Button onClick={handleGoogleSignIn} variant="contained">Google Sign In</Button>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <img style={{ width: '100%' }} src={login} alt="" />
+                    <img style={{ width: '100%' }} src='w' alt="" />
                 </Grid>
             </Grid>
         </Container>
