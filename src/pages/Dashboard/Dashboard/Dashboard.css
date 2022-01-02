@@ -4,18 +4,13 @@
 }
 
 .dashboard .logOut-btn{
-    /* border: 0px solid transparent; */
-    margin-left: 1.5rem;
+    border: 1px solid transparent;
+    margin-left: 1.9rem;
     margin-top: 1rem;
     font-weight: 500;
-    /* background-color: transparent; */
-    color: #DC3545;
-
 }
 
-.dashboard .logOut-btn:hover{
-    color: white;
-}
+
 
 
 .sidebar{
@@ -23,7 +18,9 @@
 }
 
 .sidebar-content a{
-    padding-inline: 2rem ;
+    /* display: inline-block; */
+    padding-left: 2rem;
+    padding-bottom: 20px ;
 }
 
 .sidebar-content a{
@@ -32,18 +29,21 @@
     font-weight: 500;
 }
 
-.sidebar-content a:hover{
-    /* color: white; */
-}
+/* .sidebar-content a:hover{
+    color: white;
+} */
 .sidebar-content a:active{
     color: white;
 }
 
 
-.activeClass{
-    /* color: rgba(165, 165, 165, 0.565); */
-}
+/* .activeClass{
+    color: rgba(165, 165, 165, 0.565);
+} */
 
+/* .cross{
+    color: black;
+} */
 @media screen and (min-width:992px) {
     body{
         overflow: auto !important;
