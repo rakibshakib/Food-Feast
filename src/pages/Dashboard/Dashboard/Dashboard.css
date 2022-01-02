@@ -32,17 +32,17 @@
     font-weight: 500;
 }
 
-.sidebar-content a:hover{
-    /* color: white; */
-}
+/* .sidebar-content a:hover{
+    color: white;
+} */
 .sidebar-content a:active{
     color: white;
 }
 
 
-.activeClass{
-    /* color: rgba(165, 165, 165, 0.565); */
-}
+/* .activeClass{
+    color: rgba(165, 165, 165, 0.565);
+} */
 
 @media screen and (min-width:992px) {
     body{
