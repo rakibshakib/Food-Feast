@@ -4,32 +4,64 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Box, Grid, Tooltip } from "@mui/material";
-import GradeIcon from '@mui/icons-material/Grade';
+import GradeIcon from "@mui/icons-material/Grade";
+import { useNavigate } from "react-router-dom";
 
-const ProductCard = ({item}) => {
-
-  const orderFood = () => {
-    console.log("this food is orders");
+const ProductCard = ({ item }) => {
+  const navigate = useNavigate()
+  const orderFood = (id) => {
+        navigate(`/booking-food/${id}`)
   };
   return (
-    <Grid item xs={12} md={4} lg={3} onClick={orderFood} className="food-card">
-      <Tooltip title="Want to order this Food? 🍕 Just Click 😁" placement="top-end">
-        <Card sx={{ maxWidth: 310 }}>
+    <Grid
+      item
+      xs={12}
+      md={4}
+      lg={3}
+      onClick={() => orderFood(item._id)}
+      className="food-card"
+    >
+      <Tooltip
+        title="Want to order this Food? 🍕 Just Click 😁"
+        placement="top-end"
+      >
+        <Card sx={{ maxWidth: 310, height: 330 }}>
           <CardMedia
             component="img"
-            height="140"
+            height="200"
             image={item?.url}
             alt="green iguana"
           />
           <CardContent>
-          <Box sx={{display: 'flex' , justifyContent: 'space-between', alignItems: 'center'}}>
-            <Typography gutterBottom component="h6">
-              {item?.name}
-            </Typography>
-            <Box sx={{display: 'flex' , justifyContent: 'start', alignItems: 'center'}}><GradeIcon /> {item?.rating}/5 </Box>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <Typography component="h5">{item?.name}</Typography>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "start",
+                  alignItems: "center",
+                  fontSize: 14,
+                }}
+              >
+                <GradeIcon sx={{ fontSize: 16 }} /> &nbsp;{item?.rating}/5
+              </Box>
             </Box>
-            <Typography variant="body2" color="text.secondary" sx={{my:2}}>
-              {item?.description.slice(0,50)}
+            <Typography
+              sx={{ fontSize: 15, my: 4, color: "red" }}
+              component="h5"
+              color="text.secondary"
+            >
+              Price: &nbsp;${item?.price} &nbsp; - &nbsp;{" "}
+              <span style={{ textDecoration: "line-through", color: "gray" }}>
+                {" "}
+                ${(item?.price + 1.2).toFixed(2)}
+              </span>
             </Typography>
           </CardContent>
         </Card>

@@ -16,25 +16,24 @@ const Navbar = () => {
         <Link to='/' className='router-link brand-name'>Food Feast</Link>
       </div>
       <div className="nav-bar-options">
-        <h4 className="explore-btn">Explore</h4>
-        <Link className='router-link' to='/about-us'>About Us</Link>
+        <h4 className="explore-btn">Explore</h4> &nbsp; &nbsp;
+        <Link className='router-link' to='/about-us'>About Us</Link> &nbsp;
         <div className="nav-user">
           <figure>
-            <img src="img.jpg" alt="user-imge" />
+            <img src={user?.photoURL} alt="user-imge" />
           </figure>
-          <h2 className="user-name">User name</h2>
+          <h2 className="user-name">{(user?.displayName)?  user.displayName : "User Name"}</h2>
           <span> <KeyboardArrowDownIcon /> </span>
         </div>
         {
-          user?.email ?
-              <Box>
-                  <Button onClick={logout} color="inherit">Logout</Button>
-              </Box>
-              :
-              <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/login">
-                  <Button color="inherit">Login</Button>
-              </NavLink>
-          }
+          !user?.email && <NavLink style={{ textDecoration: 'none', color: 'black' }} to="/login">
+          <Button color="inherit">Login</Button>
+      </NavLink> }
+            
+                  {/* <Button onClick={logout} color="inherit">Logout</Button> */}
+           
+              
+         
       </div>
     </div>
   );
