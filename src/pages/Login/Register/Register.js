@@ -1,9 +1,10 @@
 import { Container, Typography, TextField, Button, CircularProgress, Alert } from '@mui/material';
 import React, { useState } from 'react';
 import { Grid } from '@mui/material';
-import login from '../../../images/login.png'
 import { NavLink, useNavigate } from 'react-router-dom';
-import useAuth from './../../../hooks/useAuth';
+import useAuth from './../../../Hooks/useAuth';
+import Login from '../Login/Login';
+
 
 const Register = () => {
     const [loginData, setLoginData] = useState({});
@@ -75,7 +76,7 @@ const Register = () => {
                     {authError && <Alert severity="error">{authError}</Alert>}
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <img style={{ width: '100%' }} src={login} alt="" />
+                    <img style={{ width: '100%' }} src={Login} alt="" />
                 </Grid>
             </Grid>
         </Container>
