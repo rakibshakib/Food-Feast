@@ -17,11 +17,9 @@ const Navbar = () => {
       </div>
       <div className="nav-bar-options">
 
-        <h4 className="explore-btn">Explore</h4>
-        <Link className='router-link' to='/dashboard'>Dashboard</Link>
-        <Link className='router-link' to='/about-us'>About Us</Link>
 
-        <h4 className="explore-btn">Explore</h4> &nbsp; &nbsp;
+        <Link className='router-link' to='/dashboard'>Dashboard</Link> &nbsp;
+        <Link className='router-link' to='/explore'>Explore</Link>&nbsp; &nbsp;
         <Link className='router-link' to='/about-us'>About Us</Link> &nbsp;
 
         <div className="nav-user">
