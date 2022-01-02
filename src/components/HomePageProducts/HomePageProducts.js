@@ -13,18 +13,7 @@ const HomePageProducts = () => {
         {data.map((item) => (
           <ProductCard key={item._id} item={item} />
         ))}
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        
       </Grid>
     </Container>
   );
