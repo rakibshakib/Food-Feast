@@ -1,11 +1,14 @@
 .order-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 10px;
+  justify-content: space-evenly;
+  padding: 10px 5px;
   border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+  margin-left: 100px;
 }
+
 .order-container-img {
   width: 250px;
 }
@@ -17,7 +20,7 @@
   font-size: 1.5rem;
 }
 .order-food-price {
-  color: red;
+  color: #ff0022;
   margin: 15px 0;
   font-size: 16px;
 }
@@ -26,7 +29,6 @@
 }
 .order-input {
   padding: 5px 10px;
-  width: 100px;
   text-align: center;
   font-weight: 600;
   border: none;
@@ -38,9 +40,27 @@
 }
 .incriment,
 .decrement {
-  background: rgb(3, 0, 0) !important;
-  color: white;
+  background: #edfdfb !important;
+  color: black;
   border: none;
   padding: 5px 0;
-  border-radius: 0;
+  border-radius: 5px;
+  padding: 10px;
+} 
+
+@media (max-width: 425px) { 
+  .order-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .order-food-details {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) { 
+  
 }

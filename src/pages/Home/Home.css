@@ -15,6 +15,9 @@
     width: 90%;
     margin: auto;
 }
+.nav-bg{
+    background-color:#edfdfb;
+}
 .nav-user, 
 .nav-bar-options{
     display: flex;
