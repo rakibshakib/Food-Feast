@@ -1,0 +1,42 @@
+.banner{
+    background-image:  url('https://i.ibb.co/n0rt6mP/rachel-park-hrlvr2-Zl-UNk-unsplash.jpg');
+    height: 600px;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    display: grid;
+    place-content: center;
+}
+
+.banner-info{
+    color: white;
+    text-align: center;
+}
+
+.banner h2{
+
+    font-size: 2rem;
+}
+.banner p{
+    width: 500px;
+    font-size: 1.2rem;
+    margin: auto;
+}
+
+.banner-btn-container{
+    /* font-size: 3rem; */
+}
+
+.banner-btn{
+    display: inline-block;
+    padding: 10px 50px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    margin: 10px;
+    /* background-color: #F3546A; */
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    margin-block: 2rem;
+}
+
