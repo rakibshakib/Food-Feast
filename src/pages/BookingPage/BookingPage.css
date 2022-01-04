@@ -43,8 +43,8 @@
 }
 .incriment,
 .decrement {
-  background: #edfdfb !important;
-  color: black;
+  background: black;
+  color: white;
   border: none;
   padding: 5px 0;
   border-radius: 5px;

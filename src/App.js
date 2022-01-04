@@ -14,6 +14,7 @@ import MakeAdmin from "./pages/Dashboard/MakeAdmin/MakeAdmin";
 import DashboardHome from "./pages/Dashboard/DashboardHome/DashbaordHome";
 import Explore from "./pages/Explore/Explore";
 import ManageProducts from "./pages/Dashboard/ManageProducts/ManageProduct/ManageProducts";
+import PrivateRoute from "./pages/Login/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
@@ -35,7 +36,14 @@ function App() {
 
           <Route path="/register" element={<Register />} />
 
-          <Route path="/booking-food/:id" element={<BookingPage />} />
+          <Route
+            path="/booking-food/:id"
+            element={
+              <PrivateRoute>
+                <BookingPage />
+              </PrivateRoute>
+            }
+          />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </div>
