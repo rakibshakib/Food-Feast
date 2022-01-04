@@ -4,6 +4,7 @@ import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import './About.css'
 import Header from '../../components/Navbar/Header';
+import FAQ from '../../pages/Home/FAQ'
 
 const About = () => {
     return (
@@ -54,6 +55,8 @@ const About = () => {
                         <p>Whether you're a ketchup and mustard loyalist or you prefer house sauce to no sauce, you can agree that every cheeseburger has it's own special flair. Top tip: house sauce begs to be ordered on the side for fry-dipping purposes.The cheese melts on the burger and in your mouth, perfectly complementing the medium-rare beef. Any burger lover worth their salt knows the best patty is comprised of ground chuck and brisket.</p>
                     </Col>
                 </Row>
+
+                <FAQ />
             </Container>
             <Footer />
         </div>
