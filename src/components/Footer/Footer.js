@@ -1,8 +1,11 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faApple, faFacebook, faFacebookSquare, faGooglePlay, faInstagramSquare, faTwitterSquare, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
 import { Col, Container, Row } from "react-bootstrap";
 import "./Footer.css";
 import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
+import { faEnvelope, faMapMarkedAlt, faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
@@ -30,36 +33,42 @@ const Footer = () => {
                   <Fade bottom>
 
                     <li>
-                      {/* <Fade bottom> */}
-                      <a href="/d">
-                        <i class="fab fa-youtube"></i>
+                      <Fade bottom>
+                        <a href="https://www.youtube.com/" rel="noopener noreferrer" target="_blank" >
+                          <FontAwesomeIcon className='icon' icon={faYoutubeSquare} />
                       </a>
-                      {/* </Fade> */}
+                      </Fade>
 
                     </li>
                   </Fade>
                   <Fade bottom>
 
                     <li>
-                      <a href="https://www.facebook.com/">
-                        <i class="fab fa-facebook-square"></i>
-                      </a>
+                      <Fade bottom>
+                        <a href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank">
+                          <FontAwesomeIcon className='icon' icon={faFacebookSquare} />
+                        </a>
+                      </Fade>
                     </li>
                   </Fade>
                   <Fade bottom>
 
                     <li>
-                      <a href="/d">
-                        <i class="fab fa-instagram"></i>
-                      </a>
+                      <Fade bottom>
+                        <a href="/https://www.instagram.com/" rel="noopener noreferrer" target="_blank">
+                          <FontAwesomeIcon className='icon' icon={faInstagramSquare} />
+                        </a>
+                      </Fade>
                     </li>
                   </Fade>
                   <Fade bottom>
 
                     <li>
-                      <a href="/d">
-                        <i class="fab fa-twitter-square"></i>
-                      </a>
+                      <Fade bottom>
+                        <a href="https://twitter.com/" rel="noopener noreferrer" target="_blank">
+                          <FontAwesomeIcon className='icon' icon={faTwitterSquare} />
+                        </a>
+                      </Fade>
                     </li>
                   </Fade>
                   </ul>
@@ -125,15 +134,15 @@ const Footer = () => {
                 </div> */}
                 <ul className="information contact-info">
                   <li>
-                    <i className="fas fa-map-marker-alt"></i>
+                  <FontAwesomeIcon className='icon' icon={faMapMarkerAlt} />
                     Dhaka, Bangladesh
                   </li>
                   <li>
-                    <i className="fas fa-envelope"></i>
+                  <FontAwesomeIcon className='icon' icon={faEnvelope} />
                     Official: foodfeast@gmail.com
                   </li>
                   <li>
-                    <i className="fas fa-phone"></i>
+                  <FontAwesomeIcon className='icon' icon={faPhone} />
                     Helpline: +8801798626997
                   </li>
                 </ul>

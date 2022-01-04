@@ -1,10 +1,11 @@
 import React from 'react';
 import { Button } from '@mui/material';
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet, useNavigate } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
 import './Dashboard.css';
 
 const Dashboard = () => {
+    const navigate = useNavigate();
     const { logout } = useAuth();
     return (
         <div className='dashboard'>
@@ -39,7 +40,7 @@ const Dashboard = () => {
                     {/* </>} */}
 
 
-                    <Button className='logOut-btn' variant="outlined" color="error" onClick={logout}>Log out</Button>
+                    <Button className='logOut-btn' variant="outlined" color="error" onClick={() => logout(navigate)}>Log out</Button>
                     <div className="dropdown mt-3">
 
                     </div>

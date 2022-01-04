@@ -7,16 +7,18 @@ import Header from "../../components/Navbar/Header";
 
 import "./Home.css";
 const Home = () => {
-  return (
-    <div>
-      <Header />
-      <Banner />
-      <HomePageProducts />
-      <MidBanner />
-      {/* <FAQ /> */}
-      <Footer />
-    </div>
-  );
-};
 
+    return (
+        <div>
+            <Header />
+            <Banner />
+            <HomePageProducts />
+
+            <MidBanner />
+            {/* <FAQ /> */}
+
+            <Footer />
+        </div>
+    )
+}
 export default Home;

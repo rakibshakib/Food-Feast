@@ -12,8 +12,8 @@ import AddProduct from "./pages/Dashboard/AddProduct/AddProduct";
 import ManageOrders from "./pages/Dashboard/ManageOrders/ManageOrders";
 import MakeAdmin from "./pages/Dashboard/MakeAdmin/MakeAdmin";
 import DashboardHome from "./pages/Dashboard/DashboardHome/DashbaordHome";
-import ManageProducts from "./pages/Dashboard/ManageProduct/ManageProducts";
 import Explore from "./pages/Explore/Explore";
+import ManageProducts from "./pages/Dashboard/ManageProducts/ManageProduct/ManageProducts";
 
 function App() {
   return (
