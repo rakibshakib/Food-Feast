@@ -18,7 +18,7 @@ const Header = () => {
         <Container>
           <Navbar.Brand href="#">
             <Link to="/" className="router-link brand-name">
-              Food Feast
+              <span className="brand-name">Food Feast</span>
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -28,6 +28,11 @@ const Header = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
+              <Nav.Link href="#action1">
+                <Link className="router-link" to="/">
+                  Home
+                </Link>
+              </Nav.Link>
               <Nav.Link href="#action1">
                 <Link className="router-link" to="/explore">
                   Explore
@@ -49,9 +54,8 @@ const Header = () => {
                       Dashboard
                     </Link>}
                   </NavDropdown.Item>
-                  <NavDropdown.Divider />
                   <NavDropdown.Item href="#action5">
-                    <Button onClick={logout} color="inherit">
+                    <Button size="small" sx={{fontWeight: 700}} onClick={logout} color="inherit">
                       Logout
                     </Button>
                   </NavDropdown.Item>

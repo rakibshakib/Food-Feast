@@ -1,15 +1,13 @@
-import React from 'react'
-import Footer from '../../components/Footer/Footer'
-import HomePageProducts from '../../components/HomePageProducts/HomePageProducts'
-import MidBanner from '../../components/Mid-banner/MidBanner'
-import Banner from '../../components/Banner/Banner'
+import React from "react";
+import Footer from "../../components/Footer/Footer";
+import HomePageProducts from "../../components/HomePageProducts/HomePageProducts";
+import MidBanner from "../../components/Mid-banner/MidBanner";
+import Banner from "../../components/Banner/Banner";
+import Header from "../../components/Navbar/Header";
 
-import FAQ from './FAQ'
-import Header from '../../components/Navbar/Header'
-
-
-import './Home.css'
+import "./Home.css";
 const Home = () => {
+
     return (
         <div>
             <Header />
@@ -23,5 +21,4 @@ const Home = () => {
         </div>
     )
 }
-
-export default Home
+export default Home;
