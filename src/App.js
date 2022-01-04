@@ -12,6 +12,7 @@ import AddProduct from "./pages/Dashboard/AddProduct/AddProduct";
 import ManageOrders from "./pages/Dashboard/ManageOrders/ManageOrders";
 import MakeAdmin from "./pages/Dashboard/MakeAdmin/MakeAdmin";
 import DashboardHome from "./pages/Dashboard/DashboardHome/DashbaordHome";
+import ManageProducts from "./pages/Dashboard/ManageProduct/ManageProducts";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/about-us" element={<About />} />
           <Route path="/dashboard" element={<Dashboard />}>
             <Route path="addProduct" element={<AddProduct />} />
+            <Route path="manageProducts" element={<ManageProducts />} />
             <Route path="dashboardHome" element={<DashboardHome />} />
             <Route path="manageOrders" element={<ManageOrders />} />
             <Route path="makeAdmin" element={<MakeAdmin />} />

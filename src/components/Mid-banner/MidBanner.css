@@ -37,14 +37,13 @@
     padding: 5px 10px;
     color: white;
     background-color: Black;
+    transition: all ease-in-out .2s;
+    box-shadow: 3px 3px 5px 1px #922b39;
+
 }
 
-.app-btn{
-    
-}
-
-.play-btn{
-
+.app-btn:hover, .play-btn:hover{
+    box-shadow: 5px 5px 5px 1px #922b39;
 }
 
 .icon{
