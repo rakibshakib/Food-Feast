@@ -1,6 +1,7 @@
 import { Button } from '@mui/material';
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+import './ManageProduct.css'
 
 const ManageProduct = ({ product, handleDeleteOrder }) => {
     const { url, name, description, price } = product;
@@ -10,7 +11,7 @@ const ManageProduct = ({ product, handleDeleteOrder }) => {
     return (
         <Col className="p-2 manage-product" >
             <Card className="text-center" >
-                <Card.Img variant="top" src={product.url} className='card-img' />
+                <img src={product.url} className='card-img' alt="" />
                 <Card.Body>
                     <Card.Title className="card-name">{product.name}</Card.Title>
                     <Card.Text className="card-description">{para}

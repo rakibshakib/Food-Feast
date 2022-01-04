@@ -1,0 +1,11 @@
+ .card-img{
+    width: 30%;
+    object-fit: contain;
+    /* margin: auto; */
+    transition: .2s;
+}
+
+.card{
+    box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.266);
+    margin: 5px;
+}
