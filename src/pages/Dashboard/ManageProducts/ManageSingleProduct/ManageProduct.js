@@ -1,24 +1,32 @@
 import { Button } from '@mui/material';
 import React from 'react';
-import { Card, Col } from 'react-bootstrap';
+import { Card, Col, Row } from 'react-bootstrap';
 import './ManageProduct.css'
 
 const ManageProduct = ({ product, handleDeleteOrder }) => {
     const { url, name, description, price } = product;
-    const para = description.slice(0, 100);
+    const para = description.slice(0, 30);
     // console.log(para)
 
     return (
         <Col className="p-2 manage-product" >
             <Card className="text-center" >
-                <img src={product.url} className='card-img' alt="" />
-                <Card.Body>
-                    <Card.Title className="card-name">{product.name}</Card.Title>
-                    <Card.Text className="card-description">{para}
-                    </Card.Text>
-                    <h6>Price: &#x24;{product.price}</h6>
-                    <Button onClick={() => handleDeleteOrder(product._id)} variant="outlined" color="error">DELETE</Button>
-                </Card.Body>
+                <Row>
+                    <Col lg={5}>
+                        <div className='card-img-container'><img src={product.url} className='card-img' alt="" /></div>
+                    </Col>
+
+                    <Col lg={7} className='product-info'>
+                        <div>
+                            <Card.Title className="card-name">{product.name}</Card.Title>
+                            <Card.Text className="card-description">{para}...</Card.Text>
+                            <h6>Price: &#x24;{product.price}</h6>
+                        </div>
+
+                    </Col>
+                </Row>
+                <Button onClick={() => handleDeleteOrder(product._id)} variant="outlined" color="error">DELETE</Button>
+
             </Card>
         </Col>
     );
