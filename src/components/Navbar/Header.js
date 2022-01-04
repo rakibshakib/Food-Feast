@@ -12,7 +12,7 @@ import {
 } from "react-bootstrap";
 
 const Header = () => {
-  const { user, logout } = useAuth();
+  const { user, logout, admin } = useAuth();
   return (
     <div className="nav-bg">
       <Navbar bg="light" expand="lg">
@@ -46,9 +46,9 @@ const Header = () => {
                 >
                   <NavDropdown.Item href="#action3">
                     {" "}
-                    <Link className="router-link" to="/dashboard">
+                    {admin && <Link className="router-link" to="/dashboard/dashboardHome">
                       Dashboard
-                    </Link>
+                    </Link>}
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action5">

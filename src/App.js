@@ -8,6 +8,10 @@ import AuthProvider from "./contexts/AuthProvider/AuthProvider";
 import Dashboard from "./pages/Dashboard/Dashboard/Dashboard";
 import BookingPage from "./pages/BookingPage/BookingPage";
 import NotFound from "./pages/NotFound/NotFound";
+import AddProduct from "./pages/Dashboard/AddProduct/AddProduct";
+import ManageOrders from "./pages/Dashboard/ManageOrders/ManageOrders";
+import MakeAdmin from "./pages/Dashboard/MakeAdmin/MakeAdmin";
+import DashboardHome from "./pages/Dashboard/DashboardHome/DashbaordHome";
 
 
 function App() {
@@ -19,8 +23,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/dashboard" element={<Dashboard />}>
-            {/* <Route path="dashboard" element={</>} /> */}
-            {/* <Route path="about-us" element={<PrivateRoute><About/></PrivateRoute>} /> */}
+            <Route path="addProduct" element={<AddProduct />} />
+            <Route path="dashboardHome" element={<DashboardHome />} />
+            <Route path="manageOrders" element={<ManageOrders />} />
+            <Route path="makeAdmin" element={<MakeAdmin />} />
           </Route>
           <Route path="/login" element={<Login />} />
 
