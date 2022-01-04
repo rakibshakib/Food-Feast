@@ -4,10 +4,19 @@ import HomePageProducts from '../../components/HomePageProducts/HomePageProducts
 import MidBanner from '../../components/Mid-banner/MidBanner'
 import Banner from '../../components/Banner/Banner'
 import Navbar from '../../components/Navbar/Navbar'
+
+import Banner from '../../components/Navbar/Banner'
+import Header from '../../components/Navbar/Header'
+
 import './Home.css'
 const Home = () => {
     return (
         <div>
+
+
+            {/* <Navbar /> */}
+            <Header />
+
             <Banner />
             <HomePageProducts />
             <MidBanner />

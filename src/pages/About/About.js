@@ -1,14 +1,14 @@
 import React from 'react'
 import Footer from '../../components/Footer/Footer'
-import Navbar from '../../components/Navbar/Navbar'
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import './About.css'
+import Header from '../../components/Navbar/Header';
 
 const About = () => {
     return (
         <div id='aboutUs'>
-            <Navbar />
+            <Header />
             <h2 className='text-center about-heading py-3'>About Us</h2>
 
             <Container className='about-container'>
