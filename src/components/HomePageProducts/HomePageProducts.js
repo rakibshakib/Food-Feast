@@ -1,9 +1,12 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import ProductCard from "../ProductCard/ProductCard";
-import { Container, Typography } from "@mui/material";
+import { Box, Button, Container, Typography } from "@mui/material";
 import { usePizza } from "../../Hooks/usePizzaData";
 import { useBerger } from "../../Hooks/useBerger";
+import { Link } from "react-router-dom";
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+import Fade from "react-reveal/Fade";
 
 const HomePageProducts = () => {
   // const [data] = useFoodData();
@@ -11,26 +14,86 @@ const HomePageProducts = () => {
   const [burger] = useBerger();
   return (
     <Container sx={{ my: 5, py: 4 }}>
-      <Typography variant="h5" sx={{ my: 3 }}>
-        Our Pizza Item
-        
-      </Typography>
-      <hr />
+      <Fade bottom>
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+            alignItems: "center",
+            mt: 5,
+          }}
+        >
+          <Typography variant="h5" sx={{ fontWeight: 700 }}>
+            Our Pizza Item
+          </Typography>
+          <Link className="router-link" to="/explore">
+            <Button size="small" variant="outlined">
+              Explore More <ArrowRightIcon />
+            </Button>
+          </Link>
+        </Box>
+        <hr />
+      </Fade>
       <Grid container spacing={5}>
         {pizza.slice(0, 8).map((item) => (
           <ProductCard key={item._id} item={item} />
         ))}
       </Grid>
-
-      <Typography variant="h5" sx={{ my: 3 }}>
-        Our Berger Item
-      </Typography>
-      <hr />
+      <Fade bottom>
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+            alignItems: "center",
+            mt: 5,
+          }}
+        >
+          <Typography variant="h5" sx={{ fontWeight: 700 }}>
+            Our Berger Item
+          </Typography>
+          <Link className="router-link" to="/explore">
+            <Button size="small" variant="outlined">
+              Explore More <ArrowRightIcon />
+            </Button>
+          </Link>
+        </Box>
+        <hr />
+      </Fade>
       <Grid container spacing={5}>
         {burger.slice(0, 4).map((item) => (
           <ProductCard key={item._id} item={item} />
         ))}
       </Grid>
+      <Fade bottom>
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+            alignItems: "center",
+            mt: 5,
+          }}
+        >
+          <Typography variant="h5" sx={{ fontWeight: 700 }}>
+            Our Best Pizza 😋 Items
+          </Typography>
+          <Link className="router-link" to="/explore">
+            <Button size="small" variant="outlined">
+              Explore More <ArrowRightIcon />
+            </Button>
+          </Link>
+        </Box>
+        <hr />
+      </Fade>
+      <Grid container spacing={5}>
+        {pizza.slice(6).map((item) => (
+          <ProductCard key={item._id} item={item} />
+        ))}
+      </Grid>
+        
+      
     </Container>
   );
 };
