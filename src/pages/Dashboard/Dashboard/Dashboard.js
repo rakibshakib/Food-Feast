@@ -3,11 +3,13 @@ import { Button } from '@mui/material';
 import { Link, Outlet, useNavigate } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
 import './Dashboard.css';
+import Header from '../../../components/Navbar/Header';
 
 const Dashboard = () => {
     const navigate = useNavigate();
     const { logout } = useAuth();
     return (
+        <>
         <div className='dashboard'>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
@@ -51,6 +53,7 @@ const Dashboard = () => {
 
             </main>
         </div>
+        </>
     );
 };
 
