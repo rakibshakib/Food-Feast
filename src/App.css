@@ -43,3 +43,13 @@ li{
 .footer li:hover{
   color: white;
 }
+.card-image-container{
+  overflow: hidden;
+}
+.MuiCardMedia-img{
+  transition: 2s linear !important;
+}
+
+.MuiCardMedia-img:hover{
+  transform: scale(1.3) !important; 
+}

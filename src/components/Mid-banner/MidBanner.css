@@ -1,0 +1,99 @@
+.mid-banner-container{
+    margin-block: 8rem;
+    margin-inline: 0rem;
+}
+.mid-banner{
+    background-color: #f3546a;
+    height: 300px;
+    display: grid;
+    place-content: center;
+}
+
+.mid-banner-img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.mid-banner-row{
+    width: 100%;
+    display: flex;
+    place-items: center;
+    margin: 0px;
+}
+
+.mid-banner-intro{
+    padding-left: 5em;
+}
+
+.mid-banner-intro h2,.mid-banner-intro p{
+    color: white;
+}
+
+.app-btn, .play-btn{
+    border: 1px solid transparent;
+    border-radius: 5px ;
+    margin-right: 10px;
+    padding: 5px 10px;
+    color: white;
+    background-color: Black;
+}
+
+.app-btn{
+    
+}
+
+.play-btn{
+
+}
+
+.icon{
+    color: white;
+    font-size: 1.2rem;
+    /* width: 40px;
+    height: 40px; */
+    margin-right: 5px;
+}
+
+
+
+@media screen and (max-width:1024px) {
+    .mid-banner-container{
+        margin-block: 5rem;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .mid-banner{
+        background-color: #f3546a;
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .mid-banner-img{
+        width: 75%;
+    }
+
+    .mid-banner-intro p{
+        width: 75%;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+
+    .mid-banner-intro{
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .mid-banner-container{
+        margin-block: 2rem;
+        margin-inline: 0rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .mid-banner-img{
+        width: 100%;
+    }
+}

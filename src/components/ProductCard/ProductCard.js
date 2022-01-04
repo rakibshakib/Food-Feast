@@ -6,11 +6,12 @@ import Typography from "@mui/material/Typography";
 import { Box, Grid, Tooltip } from "@mui/material";
 import GradeIcon from "@mui/icons-material/Grade";
 import { useNavigate } from "react-router-dom";
+import Fade from "react-reveal/Fade";
 
 const ProductCard = ({ item }) => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const orderFood = (id) => {
-        navigate(`/booking-food/${id}`)
+    navigate(`/booking-food/${id}`);
   };
   return (
     <Grid
@@ -21,51 +22,55 @@ const ProductCard = ({ item }) => {
       onClick={() => orderFood(item._id)}
       className="food-card"
     >
-      <Tooltip
-        title="Want to order this Food? 🍕 Just Click 😁"
-        placement="top-end"
-      >
-        <Card sx={{ maxWidth: 310, height: 330 }}>
-          <CardMedia
-            component="img"
-            height="200"
-            image={item?.url}
-            alt="green iguana"
-          />
-          <CardContent>
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
-              <Typography component="h5">{item?.name}</Typography>
+      <Fade bottom>
+        <Tooltip
+          title="Want to order this Food? 🍕 Just Click 😁"
+          placement="top-end"
+        >
+          <Card sx={{ maxWidth: 310, height: 350 }}>
+            <div className="card-image-container">
+              <CardMedia
+                component="img"
+                height="210px"
+                image={item?.url}
+                alt="green iguana"
+              />
+            </div>
+            <CardContent>
               <Box
                 sx={{
                   display: "flex",
-                  justifyContent: "start",
+                  justifyContent: "space-between",
                   alignItems: "center",
-                  fontSize: 14,
                 }}
               >
-                <GradeIcon sx={{ fontSize: 16 }} /> &nbsp;{item?.rating}/5
+                <Typography component="h5">{item?.name}</Typography>
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "start",
+                    alignItems: "center",
+                    fontSize: 14,
+                  }}
+                >
+                  <GradeIcon sx={{ fontSize: 16 }} /> &nbsp;{item?.rating}/5
+                </Box>
               </Box>
-            </Box>
-            <Typography
-              sx={{ fontSize: 15, my: 4, color: "red" }}
-              component="h5"
-              color="text.secondary"
-            >
-              Price: &nbsp;${item?.price} &nbsp; - &nbsp;{" "}
-              <span style={{ textDecoration: "line-through", color: "gray" }}>
-                {" "}
-                ${(item?.price + 1.2).toFixed(2)}
-              </span>
-            </Typography>
-          </CardContent>
-        </Card>
-      </Tooltip>
+              <Typography
+                sx={{ fontSize: 15, my: 4, color: "red" }}
+                component="h5"
+                color="text.secondary"
+              >
+                Price: &nbsp;${item?.price} &nbsp; - &nbsp;{" "}
+                <span style={{ textDecoration: "line-through", color: "gray" }}>
+                  {" "}
+                  ${(item?.price + 1.2).toFixed(2)}
+                </span>
+              </Typography>
+            </CardContent>
+          </Card>
+        </Tooltip>
+      </Fade>
     </Grid>
   );
 };
