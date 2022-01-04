@@ -22,11 +22,11 @@ const ProductCard = ({ item }) => {
       onClick={() => orderFood(item._id)}
       className="food-card"
     >
-      <Tooltip
-        title="Want to order this Food? 🍕 Just Click 😁"
-        placement="top-end"
-      >
-        <Fade bottom>
+      <Fade bottom>
+        <Tooltip
+          title="Want to order this Food? 🍕 Just Click 😁"
+          placement="top-end"
+        >
           <Card sx={{ maxWidth: 310, height: 350 }}>
             <div className="card-image-container">
               <CardMedia
@@ -69,8 +69,8 @@ const ProductCard = ({ item }) => {
               </Typography>
             </CardContent>
           </Card>
-        </Fade>
-      </Tooltip>
+        </Tooltip>
+      </Fade>
     </Grid>
   );
 };
