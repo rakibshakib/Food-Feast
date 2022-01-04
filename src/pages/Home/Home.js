@@ -3,6 +3,7 @@ import Footer from '../../components/Footer/Footer'
 import HomePageProducts from '../../components/HomePageProducts/HomePageProducts'
 import MidBanner from '../../components/Mid-banner/MidBanner'
 import Banner from '../../components/Banner/Banner'
+
 import FAQ from './FAQ'
 import Header from '../../components/Navbar/Header'
 
@@ -14,6 +15,7 @@ const Home = () => {
             <Header />
             <Banner />
             <HomePageProducts />
+
             <MidBanner />
             <FAQ />
 
