@@ -11,7 +11,8 @@
 
 
 .footer-top {
-    background: #171a1b;
+
+    background-color: #171a1bf8;
 }
   
 .social-icons {
@@ -86,4 +87,13 @@
   .contact-info li i {
     margin-right: 5px;
   }
-  
+
+.footer-bottom{
+    background: #000000e7;
+}
+.footer-bottom p{
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-block: 10px;
+}

@@ -142,6 +142,9 @@ const Footer = () => {
           </Row>
         </Container>
       </div>
+      <div className="footer-bottom">
+        <p>&copy;All Rights Reserved By Coders</p>
+      </div>
     </>
   );
 };
