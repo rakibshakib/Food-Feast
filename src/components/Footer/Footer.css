@@ -63,7 +63,10 @@
   
   .information li {
     margin: 5px 0;
+  }
 
+  .newsletter input{
+    font-size: .95rem;
   }
   .information li a {
     text-decoration: none;
@@ -71,10 +74,10 @@
     transition: 0.3s ease-in;
     font-size: .9rem;
   }
-  .information li a:hover {
+  /* .information li a:hover {
     text-decoration: underline;
     color: #1b1014e5;
-  }
+  } */
   .contact-info li {
     text-decoration: none;
     color: #b0bec5;

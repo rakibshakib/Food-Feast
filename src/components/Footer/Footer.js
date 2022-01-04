@@ -14,7 +14,7 @@ const Footer = () => {
               <h4 className="col-title">WANT TO BE A MEMBER?</h4>
               <h5 className="text-muted">Sign up for our Newsletter</h5>
               <Fade bottom>
-                <form className="d-flex">
+                <form className="d-flex newsletter">
                   <input
                     placeholder="Enter your email"
                     className="form-control rounded-0"
@@ -26,41 +26,53 @@ const Footer = () => {
 
                 <h5 className="text-muted mt-4">Follow us on</h5>
                 <div>
-                  <ul className="social-icons">
-                  <li>
-                    <Fade bottom>
+                <ul className="social-icons">
+                  <Fade bottom>
+
+                    <li>
+                      {/* <Fade bottom> */}
                       <a href="/d">
                         <i class="fab fa-youtube"></i>
                       </a>
-                    </Fade>
+                      {/* </Fade> */}
 
                     </li>
+                  </Fade>
+                  <Fade bottom>
+
                     <li>
-                      <a href="/d">
+                      <a href="https://www.facebook.com/">
                         <i class="fab fa-facebook-square"></i>
                       </a>
                     </li>
+                  </Fade>
+                  <Fade bottom>
+
                     <li>
                       <a href="/d">
                         <i class="fab fa-instagram"></i>
                       </a>
                     </li>
+                  </Fade>
+                  <Fade bottom>
+
                     <li>
                       <a href="/d">
                         <i class="fab fa-twitter-square"></i>
                       </a>
                     </li>
+                  </Fade>
                   </ul>
               </div>
             </Col>
             <Col sm={12} md={6} lg={3}>
                 <h4 className="col-title">INFORMATION</h4>
               <ul className="information">
-                <Fade bottom>
+                {/* <Fade bottom> */}
                   <li>
                     <a href="/home">bKash Payments</a>
                   </li>
-                </Fade>
+                {/* </Fade> */}
 
                   <li>
                   <a href="/home">TERMS &amp; CONDITIONS</a>
