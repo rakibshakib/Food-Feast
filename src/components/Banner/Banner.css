@@ -23,6 +23,11 @@
     margin: auto;
 }
 
+
+.btn-row{
+    width: 100%;
+    margin: 0;
+}
 .banner-btn-container{
     /* font-size: 3rem; */
     margin-block: 2rem;
@@ -30,15 +35,36 @@
 
 .banner-btn{
     display: inline-block;
-    padding: 10px 50px;
+    padding: 8px 40px;
     border: 1px solid transparent;
     border-radius: 50px;
-    /* margin: 10px; */
-    /* background-color: #F3546A; */
     background-color: white;
     color: black;
     font-size: 2rem;
-    margin-bottom: 10px;
-    /* margin-block: 2rem; */
 }
 
+
+@media screen and (max-width:768px) {
+    .banner-btn{
+        margin: 10px;
+    }
+
+    .banner p{
+        max-width: 75%;
+        font-size: 1.1rem;
+        margin: auto;
+    }
+
+    .banner-btn{
+        padding: 8px 40px;
+        border-radius: 50px;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    .banner h2{
+
+        font-size: 1.7rem;
+    }
+    
+}

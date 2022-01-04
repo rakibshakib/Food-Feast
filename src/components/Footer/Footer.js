@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./Footer.css";
+import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 
 const Footer = () => {
@@ -8,11 +9,11 @@ const Footer = () => {
         <>
       <div className="footer-top pb-4">
         <Container>
-          <Row>
+          <Row className="footer-row">
             <Col sm={12} md={6} lg={3}>
-              <Zoom>
-                <h4 className="col-title">Wanna a member?</h4>
-                <h5 className="text-muted">Sign up for our Newsletter</h5>
+              <h4 className="col-title">WANT TO BE A MEMBER?</h4>
+              <h5 className="text-muted">Sign up for our Newsletter</h5>
+              <Fade bottom>
                 <form className="d-flex">
                   <input
                     placeholder="Enter your email"
@@ -21,13 +22,18 @@ const Footer = () => {
                   />
                   <button className="btn rounded-0 btn-primary">Subs</button>
                 </form>
+              </Fade>
+
                 <h5 className="text-muted mt-4">Follow us on</h5>
                 <div>
                   <ul className="social-icons">
-                    <li>
+                  <li>
+                    <Fade bottom>
                       <a href="/d">
                         <i class="fab fa-youtube"></i>
                       </a>
+                    </Fade>
+
                     </li>
                     <li>
                       <a href="/d">
@@ -45,18 +51,19 @@ const Footer = () => {
                       </a>
                     </li>
                   </ul>
-                </div>
-              </Zoom>
+              </div>
             </Col>
             <Col sm={12} md={6} lg={3}>
-              <Zoom>
                 <h4 className="col-title">INFORMATION</h4>
-                <ul className="information">
+              <ul className="information">
+                <Fade bottom>
                   <li>
                     <a href="/home">bKash Payments</a>
                   </li>
+                </Fade>
+
                   <li>
-                    <a href="/home">TERMS & CONDITIONS</a>
+                  <a href="/home">TERMS &amp; CONDITIONS</a>
                   </li>
                   <li>
                     <a href="/home">bKash Payments</a>
@@ -70,12 +77,11 @@ const Footer = () => {
                   <li>
                     <a href="/home">Refund Policy</a>
                   </li>
-                </ul>
-              </Zoom>
+              </ul>
             </Col>
 
             <Col sm={12} md={6} lg={3}>
-              <Zoom>
+              {/* <Zoom> */}
                 <h4 className="col-title">CUSTOMER SERVICE</h4>
                 <ul className="information">
                   <li>
@@ -97,14 +103,14 @@ const Footer = () => {
                     <a href="/home">Delivery</a>
                   </li>
                 </ul>
-              </Zoom>
+              {/* </Zoom> */}
             </Col>
             <Col sm={12} md={6} lg={3}>
-              <Zoom>
-                <h4 className="col-title">Reach us</h4>
-                <div className="">
+              {/* <Zoom> */}
+              <h4 className="col-title">CONTACT US</h4>
+              {/* <div className="">
                   <img width="100px" src="https://i.ibb.co/sRh82qJ/contact.png" alt="" />
-                </div>
+                </div> */}
                 <ul className="information contact-info">
                   <li>
                     <i className="fas fa-map-marker-alt"></i>
@@ -119,7 +125,7 @@ const Footer = () => {
                     Helpline: +8801798626997
                   </li>
                 </ul>
-              </Zoom>
+              {/* </Zoom> */}
             </Col>
           </Row>
         </Container>
