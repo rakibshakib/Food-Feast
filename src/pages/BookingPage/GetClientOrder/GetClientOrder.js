@@ -27,6 +27,7 @@ const GetClientOrder = ({ singleFood, orderQuantity }) => {
       ...orderInfo,
       orderItem: singleFood?.name,
       orderItemId: singleFood?._id,
+      orderURL: singleFood?.url,
       status: "pending",
       price: singleFood?.price,
       totalPrice: singleFood?.price * orderQuantity.toFixed(2),
@@ -34,22 +35,23 @@ const GetClientOrder = ({ singleFood, orderQuantity }) => {
     };
     console.log(order);
     fetch("https://pacific-refuge-96429.herokuapp.com/orders", {
-        method: 'POST',
-        headers: {
-            'content-type': 'application/json'
-        },
-        body: JSON.stringify(order)
-    }).then(res => res.json())
-        .then(data => {
-            if (data.insertedId) {
-                setOrderSuccess(true)
-            }
-        })
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(order),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.insertedId) {
+          setOrderSuccess(true);
+        }
+      });
   };
   return (
-    <Box sx={{width: '100', py: 5, mx: 5}}>
+    <Box sx={{ width: "100", py: 5, mx: 5 }}>
       <Typography variant="h6">
-        Please Fill Up Your Information to Booking
+        Please Fill Up Your Information to Delivery
       </Typography>
       <form action="" onSubmit={handleOrderSubmit}>
         <TextField
@@ -59,7 +61,7 @@ const GetClientOrder = ({ singleFood, orderQuantity }) => {
           onBlur={handleOnBlur}
           defaultValue={user?.displayName}
           size="small"
-          sx={{ width: "80%",  my: 2 }}
+          sx={{ width: "80%", my: 2 }}
         />
 
         <TextField
@@ -92,14 +94,16 @@ const GetClientOrder = ({ singleFood, orderQuantity }) => {
           type="submit"
           variant="contained"
           color="primary"
-          sx={{mt: 2 , width: "80%" }}
+          sx={{ mt: 2, width: "80%" }}
         >
-          Confirm Order
+          Confirm Delevery
         </Button>
       </form>
-      {
-        orderSuccess &&  <Alert sx={{my: 5, width: "80%"}} severity="success">Order Success !</Alert>
-      }
+      {orderSuccess && (
+        <Alert sx={{ my: 5, width: "80%" }} severity="success">
+          Order Success ! It Will take Less Than 30 Minitues to Delivery
+        </Alert>
+      )}
     </Box>
   );
 };
