@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import Fade from "react-reveal/Fade";
 import { useRamen } from "../../Hooks/useRamen";
+import SliderProduct from "../SliderProduct/SliderProduct";
 
 const HomePageProducts = () => {
   // const [data] = useFoodData();
@@ -105,11 +106,7 @@ const HomePageProducts = () => {
             <LinearProgress />
           </Box>
         )}
-      <Grid container spacing={5}>
-        {ramen.slice(0, 4).map((item) => (
-          <ProductCard key={item._id} item={item} />
-        ))}
-      </Grid>
+      <SliderProduct />
         
       
     </Container>

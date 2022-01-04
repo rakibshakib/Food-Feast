@@ -102,7 +102,7 @@ const BookingPage = () => {
                 </Typography>
 
                 <Button
-                  sx={{ width: "100%", my: 2 }}
+                  sx={{ width: "75%", mx: 5 , my: 2 }}
                   onClick={() => setisDelivery(true)}
                   variant="contained"
                 >
@@ -110,7 +110,7 @@ const BookingPage = () => {
                 </Button>
                 <br />
                 <Button
-                  sx={{ width: "100%", my: 2 }}
+                  sx={{ width: "75%", mx: 5,  my: 2 }}
                   onClick={() => setisTakeOut(true)}
                   variant="contained"
                 >

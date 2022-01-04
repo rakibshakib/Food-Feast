@@ -13,10 +13,8 @@ const Home = () => {
             <Header />
             <Banner />
             <HomePageProducts />
-
             <MidBanner />
             {/* <FAQ /> */}
-
             <Footer />
         </div>
     )
