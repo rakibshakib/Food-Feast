@@ -12,20 +12,13 @@ import './Home.css'
 const Home = () => {
     return (
         <div>
-
-
-            {/* <Navbar /> */}
             <Header />
-
             <Banner />
             <HomePageProducts />
-
             <FAQ />
             <Footer />
-
             <MidBanner />
-            {/* <Footer /> */}
-
+            <Footer />
         </div>
     )
 }
