@@ -1,7 +1,7 @@
 import { Container, Typography, TextField, Button, CircularProgress, Alert } from '@mui/material';
 import React, { useState } from 'react';
 import { Grid } from '@mui/material';
-import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { NavLink, Link, useLocation, useNavigate } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
 
 const Login = () => {
@@ -27,11 +27,19 @@ const Login = () => {
         signInWithGoogle(location, navigate)
     }
     return (
-        <Container>
-            <Grid container spacing={2}>
+        <Container className="login-page">
+            <div
+                style={{ height: "100vh" }}
+                className="d-flex mx-3 align-items-center justify-content-center"
+            >
+                <div className="formContainer">
+                    <div className="text-center">
+                        <img width="120px" src="https://i.ibb.co/c6MqZ10/Pngtree-user-login-or-authenticate-icon-5089976.png" alt="" />
+                    </div>
+                    <Grid container spacing={2}>
                 <Grid item sx={{ mt: 8 }} xs={12} md={6}>
-                    <Typography variant="body1" gutterBottom>Login</Typography>
-                    <form onSubmit={handleLoginSubmit}>
+                    <Typography variant="body1" gutterBottom>Please Login</Typography>
+                    <form className="loginForm" onSubmit={handleLoginSubmit}>
                         <TextField
                             sx={{ width: '75%', m: 1 }}
                             id="standard-basic"
@@ -58,13 +66,17 @@ const Login = () => {
                         {user?.email && <Alert severity="success">Login successfully!</Alert>}
                         {authError && <Alert severity="error">{authError}</Alert>}
                     </form>
-                    <p>------------------------</p>
+                    <h6 className="text-center text-white">
+                        New user? <Link to="/register"> Please register!</Link>
+                    </h6>
                     <Button onClick={handleGoogleSignIn} variant="contained">Google Sign In</Button>
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <img style={{ width: '100%' }} src='w' alt="" />
                 </Grid>
-            </Grid>
+                    </Grid>
+                </div>
+            </div>        
         </Container>
     );
 };
