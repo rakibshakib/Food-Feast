@@ -36,7 +36,7 @@
     margin-right: 10px;
     padding: 5px 10px;
     color: white;
-    background-color: Black;
+    background-color: rgba(0, 0, 0, 0.851);
     transition: all ease-in-out .2s;
     box-shadow: 3px 3px 5px 1px #922b39;
 
@@ -53,12 +53,17 @@
     height: 40px; */
     margin-right: 5px;
 }
-
+.img-col img{
+    width: 600px;
+}
 
 
 @media screen and (max-width:1024px) {
     .mid-banner-container{
         margin-block: 5rem;
+    }
+    .img-col img{
+        width: 100%;
     }
 }
 

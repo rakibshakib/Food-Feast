@@ -46,8 +46,8 @@
     color: white;
   }
   
-  .social-icons a i {
-    font-size: 27px;
+  .social-icons a .icon {
+    font-size: 2rem;
   }
   .col-title {
     font-size: 1.05rem;
@@ -84,8 +84,9 @@
     color: #b0bec5;
     transition: 0.3s ease-in;
   }
-  .contact-info li i {
-    margin-right: 5px;
+  .contact-info li .icon {
+    margin-right: 10px;
+    font-size: 1rem;
   }
 
 .footer-bottom{

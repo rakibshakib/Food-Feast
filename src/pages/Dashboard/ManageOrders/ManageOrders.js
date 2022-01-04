@@ -40,9 +40,9 @@ const ManageOrders = () => {
                     {
                         orders.map(order => <Col className='my-order text-center' key={order._id} >
                             <Card className='my-2'>
-                                <Card.Img variant="top" src={order.url} />
+                                {/* <Card.Img variant="top" src={order.url} /> */}
                                 <Card.Body>
-                                    <Card.Title>{order.productName}</Card.Title>
+                                    <Card.Title>{order.orderItem}</Card.Title>
                                     <h6>Order From: {order.email}</h6>
                                     <Card.Text>
                                         {order.description}

@@ -1,6 +1,7 @@
 import { Alert, Button } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
+import ManageProduct from '../ManageSingleProduct/ManageProduct';
 import './ManageProducts.css'
 
 const ManageProducts = () => {
@@ -34,18 +35,7 @@ const ManageProducts = () => {
             <h2 className='text-center my-4'>Manage Products</h2>
             <Row xs={1} md={2} lg={3} className="w-100 m-0 ">
                 {
-                    products.map(product => <Col className="p-2 manage-product" key={product._id}>
-                        <Card className="text-center" >
-                            <Card.Img variant="top" src={product.url} className='card-img' />
-                            <Card.Body>
-                                <Card.Title className="card-name">{product.name}</Card.Title>
-                                <Card.Text className="card-description">{product.description}
-                                </Card.Text>
-                                <h6>Price: &#x24;{product.price}</h6>
-                                <Button onClick={() => handleDeleteOrder(product._id)} variant="outlined" color="error">DELETE</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>)
+                    products.map(product => <ManageProduct key={product._id} product={product} handleDeleteOrder={handleDeleteOrder}></ManageProduct>)
                 }
                 {success && <Alert severity="error" className="alert">This Product has been Successfully Deleted</Alert>}
             </Row>

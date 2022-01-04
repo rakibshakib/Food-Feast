@@ -1,9 +1,8 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faPlay } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './MidBanner.css';
-import { faApple, faAppStore, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
+import { faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
 import { Fade } from 'react-reveal';
 
 const MidBanner = () => {
@@ -20,7 +19,7 @@ const MidBanner = () => {
                         </div>
                     </Col>
                     <Col lg={6} md={6} sm={12} className='img-col'>
-                        <Fade bottom className=''>
+                        <Fade right className=''>
                             <img className='mid-banner-img' src="https://i.ibb.co/kgrWC8x/home-foodpanda-apps.png" alt="" />
                         </Fade>
                     </Col>
