@@ -15,8 +15,10 @@ const Home = () => {
             <Header />
             <Banner />
             <HomePageProducts />
-            <FAQ />
+
             <MidBanner />
+            <FAQ />
+
             <Footer />
         </div>
     )

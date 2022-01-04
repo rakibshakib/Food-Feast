@@ -41,6 +41,7 @@
     background-color: white;
     color: black;
     font-size: 2rem;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.674);
 }
 
 
@@ -67,4 +68,28 @@
         font-size: 1.7rem;
     }
     
+}
+
+@media screen and (max-width:500px) {
+    .banner-btn{
+        padding: 8px 40px;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .banner h2{
+
+        font-size: 1.3rem;
+    }
+
+    .banner-btn-container{
+        /* font-size: 3rem; */
+        margin-block: 1rem;
+    }
+    .banner{
+        height: auto;
+    }
+    .banner-info{
+        padding-block: 50px;
+    }
 }
