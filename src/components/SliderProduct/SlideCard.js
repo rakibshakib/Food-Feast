@@ -13,7 +13,7 @@ const SlideCard = ({ item }) => {
     navigate(`/booking-food/${id}`);
   };
   return (
-    <div>
+    <div className="cursor">
       <Tooltip
         title="Want to order this Food? 🍕 Just Click 😁"
         placement="top-end"
