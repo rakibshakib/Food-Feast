@@ -54,6 +54,11 @@ const Header = () => {
                       Dashboard
                     </Link>}
                   </NavDropdown.Item>
+                  <NavDropdown.Item href="#action4">
+                    <Link className="router-link" to="/explore">
+                      Profile
+                    </Link>
+                  </NavDropdown.Item>
                   <NavDropdown.Item href="#action5">
                     <Button size="small" sx={{fontWeight: 700}} onClick={logout} color="inherit">
                       Logout
