@@ -44,7 +44,7 @@ const HomePageProducts = () => {
           </Box>
         )}
       <Grid container spacing={5}>
-        {pizza.slice(0, 8).map((item) => (
+        {pizza.slice(0, 4).map((item) => (
           <ProductCard key={item._id} item={item} />
         ))}
       </Grid>
