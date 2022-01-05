@@ -61,11 +61,7 @@ const ProductCard = ({ item }) => {
                 component="h5"
                 color="text.secondary"
               >
-                Price: &nbsp;${item?.price} &nbsp; - &nbsp;{" "}
-                <span style={{ textDecoration: "line-through", color: "gray" }}>
-                  {" "}
-                  ${(item?.price + 1.2)}
-                </span>
+                Price: &nbsp;${item?.price}
               </Typography>
             </CardContent>
           </Card>
