@@ -1,6 +1,8 @@
 import {
+  Box,
   Container,
   Grid,
+  LinearProgress,
   Typography,
 } from "@mui/material";
 import React from "react";
@@ -22,11 +24,11 @@ const Explore = () => {
           Lets Explore All Our Food Items
         </Typography>
 
-        {/* {food.length === 0 && (
+        {food.length === 0 && (
           <Box sx={{ width: "100%", my: 5 }}>
             <LinearProgress />
           </Box>
-        )} */}
+        )}
         <hr />
         <Grid container spacing={5} sx={{ my: 5 }}>
           {food.map((item) => (
