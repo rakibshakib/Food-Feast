@@ -12,11 +12,11 @@ const ManageProduct = ({ product, handleDeleteOrder }) => {
         <Col className="p-2 manage-product" >
             <Card className="text-center" >
                 <Row>
-                    <Col lg={5} md={4} sm={4} xs={4}>
+                    <Col lg={4} md={4} sm={4} xs={4}>
                         <div className='card-img-container'><img src={product.url} className='card-img' alt="" /></div>
                     </Col>
 
-                    <Col lg={7} md={8} sm={8} xs={8}className='product-info'>
+                    <Col lg={8} md={8} sm={8} xs={8}className='product-info'>
                         <div>
                             <Card.Title className="card-name">{product.name}</Card.Title>
                             <Card.Text className="card-description">{para}...</Card.Text>
