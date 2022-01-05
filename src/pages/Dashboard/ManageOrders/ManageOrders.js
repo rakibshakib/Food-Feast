@@ -34,7 +34,7 @@ const ManageOrders = () => {
         <div className='manage-order'>
             <h1 className='text-center mt-4'>Manage Orders</h1>
             {success && <Alert severity="success">This is a success alert — check it out!</Alert>}
-            {orders.length === 0 && <p className='no-order'>THERE IS NO ORDER</p>}
+            {/* {orders.length === 0 && <p className='no-order'>THERE IS NO ORDER</p>} */}
             {orders.length !== 0 &&
                 <Row xs={1} md={2} lg={3} className="w-100 m-0">
                     {

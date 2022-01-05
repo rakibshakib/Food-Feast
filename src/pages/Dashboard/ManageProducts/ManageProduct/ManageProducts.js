@@ -33,7 +33,7 @@ const ManageProducts = () => {
     return (
         <div className='manage-products'>
             <h2 className='text-center my-4'>Manage Products</h2>
-            <Row xs={1} md={2} lg={3} className="w-100 m-0 ">
+            <Row xs={1} sm={1} md={2} lg={2} className="w-100 m-0 ">
                 {
                     products.map(product => <ManageProduct key={product._id} product={product} handleDeleteOrder={handleDeleteOrder}></ManageProduct>)
                 }
