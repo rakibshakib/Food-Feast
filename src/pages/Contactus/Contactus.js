@@ -4,77 +4,76 @@ import "./Contactus.css";
 const Contactus = () => {
     return (
         <div>
-            <div class="container">
-        <span class="big-circle"></span>
-        <div class="form">
-          <div class="contactus-info">
-            <h3 class="title">Let's get in touch</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              dolorum adipisci recusandae praesentium dicta!
+            <div className="container" mb-3>
+        <span className="big-circle"></span>
+        <div className="form">
+          <div className="contactus-info">
+            <h3 className="title">Let's get in touch</h3>
+            <p className="text">
+            Pull up a chair. Take a taste. Come join us. Life is so endlessly delicious.
             </p>
 
-            <div class="info">
-              <div class="information">
-                <img src="img/location.png" class="icon" alt="" />
-                <p>92 Cherry Drive Uniondale, NY 11553</p>
+            <div className="info">
+              <div className="information">
+                <img src="https://github.com/sefyudem/Contact-Form-HTML-CSS/blob/master/img/location.png?raw=true" className="icon" alt="" />
+                <p>Dhaka, Bangladesh</p>
               </div>
-              <div class="information">
-                <img src="img/email.png" class="icon" alt="" />
-                <p>lorem@ipsum.com</p>
+              <div className="information">
+                <img src="https://github.com/sefyudem/Contact-Form-HTML-CSS/blob/master/img/email.png?raw=true" className="icon" alt="" />
+                <p>foodfeast@gmail.com</p>
               </div>
-              <div class="information">
-                <img src="img/phone.png" class="icon" alt="" />
-                <p>123-456-789</p>
+              <div className="information">
+                <img src="https://github.com/sefyudem/Contact-Form-HTML-CSS/blob/master/img/phone.png?raw=true" className="icon" alt="" />
+                <p>017-986-789</p>
               </div>
             </div>
 
-            <div class="social-media">
+            <div className="social-media">
               <p>Connect with us :</p>
-              <div class="contactus-icon">
+              <div className="contactus-icon">
                 <a href="#">
-                  <i class="fab fa-facebook-f"></i>
+                  <i className="fab fa-facebook-f"></i>
                 </a>
                 <a href="#">
-                  <i class="fab fa-twitter"></i>
+                  <i className="fab fa-twitter"></i>
                 </a>
                 <a href="#">
-                  <i class="fab fa-instagram"></i>
+                  <i className="fab fa-instagram"></i>
                 </a>
                 <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
+                  <i className="fab fa-linkedin-in"></i>
                 </a>
               </div>
             </div>
           </div>
 
-          <div class="contact-form">
-            <span class="circle one"></span>
-            <span class="circle two"></span>
+          <div className="contact-form">
+            <span className="circle one"></span>
+            <span className="circle two"></span>
 
             <form action="index.html" autocomplete="off">
-              <h3 class="title">Contact us</h3>
-              <div class="input-container">
-                <input type="text" name="name" class="input" />
+              <h3 className="title">Contact us</h3>
+              <div className="input-container">
+                <input type="text" name="name" className="input" />
                 <label for="">Username</label>
                 <span>Username</span>
               </div>
-              <div class="input-container">
-                <input type="email" name="email" class="input" />
+              <div className="input-container">
+                <input type="email" name="email" className="input" />
                 <label for="">Email</label>
                 <span>Email</span>
               </div>
-              <div class="input-container">
-                <input type="tel" name="phone" class="input" />
+              <div className="input-container">
+                <input type="tel" name="phone" className="input" />
                 <label for="">Phone</label>
                 <span>Phone</span>
               </div>
-              <div class="input-container textarea">
-                <textarea name="message" class="input"></textarea>
+              <div className="input-container textarea">
+                <textarea name="message" className="input"></textarea>
                 <label for="">Message</label>
                 <span>Message</span>
               </div>
-              <input type="submit" value="Send" class="btn" />
+              <input type="submit" value="Send" className="btn" />
             </form>
           </div>
         </div>

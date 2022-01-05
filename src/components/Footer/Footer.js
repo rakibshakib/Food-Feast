@@ -31,7 +31,7 @@ const Footer = () => {
                     <li>
                       {/* <Fade bottom> */}
                       <a href="/d">
-                        <i class="fab fa-youtube"></i>
+                        <i className="fab fa-youtube"></i>
                       </a>
                       {/* </Fade> */}
 
@@ -41,7 +41,7 @@ const Footer = () => {
 
                     <li>
                       <a href="https://www.facebook.com/">
-                        <i class="fab fa-facebook-square"></i>
+                        <i className="fab fa-facebook-square"></i>
                       </a>
                     </li>
                   </Fade>
@@ -49,7 +49,7 @@ const Footer = () => {
 
                     <li>
                       <a href="/d">
-                        <i class="fab fa-instagram"></i>
+                        <i className="fab fa-instagram"></i>
                       </a>
                     </li>
                   </Fade>
@@ -57,7 +57,7 @@ const Footer = () => {
 
                     <li>
                       <a href="/d">
-                        <i class="fab fa-twitter-square"></i>
+                        <i className="fab fa-twitter-square"></i>
                       </a>
                     </li>
                   </Fade>
