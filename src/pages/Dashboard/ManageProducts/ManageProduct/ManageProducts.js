@@ -1,6 +1,6 @@
-import { Alert, Button } from '@mui/material';
+import { Alert } from '@mui/material';
 import React, { useEffect, useState } from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import ManageProduct from '../ManageSingleProduct/ManageProduct';
 import './ManageProducts.css'
 
