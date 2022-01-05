@@ -50,14 +50,13 @@ const HomePageProducts = () => {
           <LinearProgress />
         </Box>
       )}
-      <Grid container spacing={5} justifyContent="center" alignItems="center">
+      
         {pizza.slice(0, 8).map((item) => (
-
           <Box sx={{ width: "100%", my: 5 }}>
             <LinearProgress />
           </Box>
-        )}
-      <Grid container spacing={5}>
+         ))}
+      <Grid container spacing={5} justifyContent="center" alignItems="center">
         {pizza.slice(0, 4).map((item) => (
 
           <ProductCard key={item._id} item={item} />

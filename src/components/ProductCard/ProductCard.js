@@ -16,7 +16,6 @@ const ProductCard = ({ item }) => {
   return (
     <Grid
       item
-      sm={4}
       xs={12}
       md={4}
       lg={3}
