@@ -3,7 +3,6 @@ import { Button } from '@mui/material';
 import { Link, Outlet, useNavigate } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
 import './Dashboard.css';
-import Header from '../../../components/Navbar/Header';
 
 const Dashboard = () => {
     const navigate = useNavigate();

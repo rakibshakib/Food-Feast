@@ -1,11 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { faApple, faFacebook, faFacebookSquare, faGooglePlay, faInstagramSquare, faTwitterSquare, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookSquare, faInstagramSquare, faTwitterSquare, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
 import { Col, Container, Row } from "react-bootstrap";
 import "./Footer.css";
 import Fade from "react-reveal/Fade";
-import { faEnvelope, faMapMarkedAlt, faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
