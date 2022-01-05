@@ -9,7 +9,7 @@ import SwiperCore, { Autoplay } from "swiper/core";
 import SlideCard from "./SlideCard";
 import { Box } from "@mui/material";
 
-SwiperCore.use([Autoplay]);
+SwiperCore.use([Autoplay ]);
 const SliderProduct = () => {
   const [ramen] = useRamen();
   return (
@@ -17,9 +17,7 @@ const SliderProduct = () => {
       <Swiper
         slidesPerView={4}
         spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
+        pagination="true"
         slidesPerGroup={4}
         autoplay={{
           delay: 3000,
