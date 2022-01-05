@@ -14,7 +14,6 @@ import { Link } from "react-router-dom";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import Fade from "react-reveal/Fade";
 import { useRamen } from "../../Hooks/useRamen";
-import SliderProduct from "../SliderProduct/SliderProduct";
 
 const HomePageProducts = () => {
   // const [data] = useFoodData();

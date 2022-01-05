@@ -64,7 +64,7 @@ const ProductCard = ({ item }) => {
                 Price: &nbsp;${item?.price} &nbsp; - &nbsp;{" "}
                 <span style={{ textDecoration: "line-through", color: "gray" }}>
                   {" "}
-                  ${(item?.price + 1.2).toFixed(2)}
+                  ${(item?.price + 1.2)}
                 </span>
               </Typography>
             </CardContent>
