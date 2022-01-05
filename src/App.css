@@ -43,6 +43,9 @@ li {
   margin-top: 10px;
   color: rgb(175, 175, 175);
 }
+.cursor{
+  cursor: pointer;
+}
 .footer li:hover {
   color: white;
 }
