@@ -106,7 +106,7 @@ const HomePageProducts = () => {
             <LinearProgress />
           </Box>
         )}
-      {/* <SliderProduct /> */}
+      <SliderProduct />
         
       
     </Container>
