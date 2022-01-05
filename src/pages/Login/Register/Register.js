@@ -4,6 +4,8 @@ import { Grid } from '@mui/material';
 import { NavLink, useNavigate } from 'react-router-dom';
 import useAuth from './../../../Hooks/useAuth';
 import Login from '../Login/Login';
+import Header from '../../../components/Navbar/Header';
+import Footer from '../../../components/Footer/Footer';
 
 
 const Register = () => {
@@ -27,7 +29,9 @@ const Register = () => {
         e.preventDefault();
     }
     return (
-        <Container>
+        <div>
+            <Header></Header>
+            <Container sx={{ mt: 5 }} sx={{ mb: 5 }}>
             <Grid container spacing={2}>
                 <Grid item sx={{ mt: 8 }} xs={12} md={6}>
                     <Typography variant="body1" gutterBottom>Register</Typography>
@@ -72,14 +76,15 @@ const Register = () => {
                         </NavLink>
                     </form>}
                     {isLoading && <CircularProgress />}
-                    {user?.email && <Alert severity="success">User Created successfully!</Alert>}
                     {authError && <Alert severity="error">{authError}</Alert>}
                 </Grid>
-                <Grid item xs={12} md={6}>
-                    <img style={{ width: '100%' }} src={Login} alt="" />
+                <Grid item xs={12} md={6} sx={{ mt: 5 }}>
+                    <img style={{ width: '80%' }} src="https://i.ibb.co/nb3H3WZ/Sign-up-bro.png" alt="" />
                 </Grid>
             </Grid>
-        </Container>
+            </Container>
+            <Footer></Footer>
+        </div>    
     );
 };
 
