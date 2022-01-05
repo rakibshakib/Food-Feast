@@ -1,4 +1,4 @@
-import { Box, Button, TextField, Typography } from "@mui/material";
+import { Alert, Box, Button, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
 import useAuth from "../../../Hooks/useAuth";
 
@@ -33,18 +33,18 @@ const GetClientOrder = ({ singleFood, orderQuantity }) => {
       orderQuantity: orderQuantity,
     };
     console.log(order);
-    // fetch("", {
-    //     method: 'POST',
-    //     headers: {
-    //         'content-type': 'application/json'
-    //     },
-    //     body: JSON.stringify(order)
-    // }).then(res => res.json())
-    //     .then(data => {
-    //         if (data.insertedId) {
-    //             setOrderSuccess(true)
-    //         }
-    //     })
+    fetch("https://pacific-refuge-96429.herokuapp.com/orders", {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify(order)
+    }).then(res => res.json())
+        .then(data => {
+            if (data.insertedId) {
+                setOrderSuccess(true)
+            }
+        })
   };
   return (
     <Box sx={{width: '100', py: 5, mx: 5}}>
@@ -97,6 +97,9 @@ const GetClientOrder = ({ singleFood, orderQuantity }) => {
           Confirm Order
         </Button>
       </form>
+      {
+        orderSuccess &&  <Alert sx={{my: 5, width: "80%"}} severity="success">Order Success !</Alert>
+      }
     </Box>
   );
 };

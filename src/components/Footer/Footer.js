@@ -1,19 +1,19 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./Footer.css";
-import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 const Footer = () => {
   return (
         <>
       <div className="footer-top pb-4">
         <Container>
-          <Row>
+          <Row className="footer-row">
             <Col sm={12} md={6} lg={3}>
-              <Zoom>
-                <h4 className="col-title">Wanna a member?</h4>
-                <h5 className="text-muted">Sign up for our Newsletter</h5>
-                <form className="d-flex">
+              <h4 className="col-title">WANT TO BE A MEMBER?</h4>
+              <h5 className="text-muted">Sign up for our Newsletter</h5>
+              <Fade bottom>
+                <form className="d-flex newsletter">
                   <input
                     placeholder="Enter your email"
                     className="form-control rounded-0"
@@ -21,42 +21,60 @@ const Footer = () => {
                   />
                   <button className="btn rounded-0 btn-primary">Subs</button>
                 </form>
+              </Fade>
+
                 <h5 className="text-muted mt-4">Follow us on</h5>
                 <div>
-                  <ul className="social-icons">
+                <ul className="social-icons">
+                  <Fade bottom>
+
                     <li>
+                      {/* <Fade bottom> */}
                       <a href="/d">
                         <i class="fab fa-youtube"></i>
                       </a>
+                      {/* </Fade> */}
+
                     </li>
+                  </Fade>
+                  <Fade bottom>
+
                     <li>
-                      <a href="/d">
+                      <a href="https://www.facebook.com/">
                         <i class="fab fa-facebook-square"></i>
                       </a>
                     </li>
+                  </Fade>
+                  <Fade bottom>
+
                     <li>
                       <a href="/d">
                         <i class="fab fa-instagram"></i>
                       </a>
                     </li>
+                  </Fade>
+                  <Fade bottom>
+
                     <li>
                       <a href="/d">
                         <i class="fab fa-twitter-square"></i>
                       </a>
                     </li>
+                  </Fade>
                   </ul>
-                </div>
-              </Zoom>
+              </div>
             </Col>
             <Col sm={12} md={6} lg={3}>
-              <Zoom>
                 <h4 className="col-title">INFORMATION</h4>
-                <ul className="information">
+              <ul className="information">
+                {/* <Fade bottom> */}
                   <li>
                     <a href="/home">bKash Payments</a>
                   </li>
+                {/* </Fade> */}
+
                   <li>
-                    <a href="/home">TERMS & CONDITIONS</a>
+                  <a href="/home">TERMS &amp; CONDITIONS</a>
                   </li>
                   <li>
                     <a href="/home">bKash Payments</a>
@@ -70,12 +88,11 @@ const Footer = () => {
                   <li>
                     <a href="/home">Refund Policy</a>
                   </li>
-                </ul>
-              </Zoom>
+              </ul>
             </Col>
 
             <Col sm={12} md={6} lg={3}>
-              <Zoom>
+              {/* <Zoom> */}
                 <h4 className="col-title">CUSTOMER SERVICE</h4>
                 <ul className="information">
                   <li>
@@ -97,14 +114,14 @@ const Footer = () => {
                     <a href="/home">Delivery</a>
                   </li>
                 </ul>
-              </Zoom>
+              {/* </Zoom> */}
             </Col>
             <Col sm={12} md={6} lg={3}>
-              <Zoom>
-                <h4 className="col-title">Reach us</h4>
-                <div className="">
+              {/* <Zoom> */}
+              <h4 className="col-title">CONTACT US</h4>
+              {/* <div className="">
                   <img width="100px" src="https://i.ibb.co/sRh82qJ/contact.png" alt="" />
-                </div>
+                </div> */}
                 <ul className="information contact-info">
                   <li>
                     <i className="fas fa-map-marker-alt"></i>
@@ -119,10 +136,13 @@ const Footer = () => {
                     Helpline: +8801798626997
                   </li>
                 </ul>
-              </Zoom>
+              {/* </Zoom> */}
             </Col>
           </Row>
         </Container>
+      </div>
+      <div className="footer-bottom">
+        <p>&copy;All Rights Reserved By Coders</p>
       </div>
     </>
   );

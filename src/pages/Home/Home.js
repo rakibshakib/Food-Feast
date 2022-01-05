@@ -9,23 +9,17 @@ import Header from '../../components/Navbar/Header'
 
 
 import './Home.css'
+import Contactus from '../Contactus/Contactus'
 const Home = () => {
     return (
         <div>
-
-
-            {/* <Navbar /> */}
             <Header />
-
             <Banner />
             <HomePageProducts />
-
             <FAQ />
-            <Footer />
-
             <MidBanner />
-            {/* <Footer /> */}
-
+            <Contactus></Contactus>
+            <Footer />
         </div>
     )
 }
