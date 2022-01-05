@@ -5,11 +5,11 @@ import "swiper/components/effect-fade/effect-fade.min.css";
 import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import "swiper/swiper.min.css";
-import SwiperCore, { Autoplay, Pagination } from "swiper/core";
+import SwiperCore, { Autoplay } from "swiper/core";
 import SlideCard from "./SlideCard";
 import { Box } from "@mui/material";
 
-SwiperCore.use([Autoplay , Pagination]);
+SwiperCore.use([Autoplay ]);
 const SliderProduct = () => {
   const [ramen] = useRamen();
   return (

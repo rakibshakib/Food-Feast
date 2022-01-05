@@ -106,7 +106,12 @@ const HomePageProducts = () => {
             <LinearProgress />
           </Box>
         )}
-      {/* <SliderProduct /> */}
+      <Grid container spacing={5}>
+        {ramen.slice(0, 4).map((item) => (
+          <ProductCard key={item._id} item={item} />
+        ))}
+      </Grid>
+      {/* <SliderProduct />  */}
         
       
     </Container>
